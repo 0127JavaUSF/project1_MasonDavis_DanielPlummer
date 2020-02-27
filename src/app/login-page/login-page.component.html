@@ -1,0 +1,16 @@
+<div id = "container">
+  <form>
+    <div class="form-group">
+      <label for="userHelp">Username</label>
+      <input type="text" class="form-control" name = username [(ngModel)]="usernameInput" aria-describedby="userHelp">
+      <p>{{usernameInput}}</p>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)] = "passwordInput">
+    </div>
+    <button [routerLink]="['history']" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  <router-outlet></router-outlet>
+
