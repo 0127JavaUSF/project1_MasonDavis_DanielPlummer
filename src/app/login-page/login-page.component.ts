@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionServiceService } from '../service/section-service.service';
+import { LoginServiceService } from '../service/login-service.service';
 import { Router, RouterLink, RouterEvent } from '@angular/router';
-import { Subscriber } from 'rxjs';
+import { Subscriber, Observable, observable } from 'rxjs';
 
 @Component({
   selector: 'app-login-page',
@@ -12,12 +12,22 @@ export class LoginPageComponent implements OnInit {
 
   usernameInput = '';
   passwordInput = '';
-  user = document.getElementsByName('username');
 
-  constructor() { }
+  user = [];
+
+  constructor(private loginService: LoginServiceService) { }
+
 
   ngOnInit(): void {
+
   }
+  /*ngOnInit(): void {
+    this.loginService
+    .loginObservable$.subscribe(item => {
+
+        this.user.push(this.usernameInput, this.passwordInput);
+    });
+  }*/
 
   login() {
     console.log('buuuuttttttonnnnn');

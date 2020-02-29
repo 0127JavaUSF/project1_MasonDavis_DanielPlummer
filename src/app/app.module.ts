@@ -9,6 +9,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { NavagationComponent } from './navagation/navagation.component';
 import {  HistoryComponent } from './history/history.component';
 import { ContentComponent } from './content/content.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContentComponent } from './content/content.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
