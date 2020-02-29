@@ -1,7 +1,7 @@
 package com.revature.servlets;
 
 /*Daniel Plummer
- * Project_1
+ * Project_11
  * PresentationServlet servlets class
  */
 
@@ -24,7 +24,7 @@ public class PresentationServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//		req.getRequestDispatcher("index.html").forward(req, resp);
+		req.getRequestDispatcher("index.html").forward(req, resp);
 	}
 	
 	@Override
