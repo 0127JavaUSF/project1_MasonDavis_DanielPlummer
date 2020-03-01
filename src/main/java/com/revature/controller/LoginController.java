@@ -16,6 +16,9 @@ import com.revature.model.CurrentUser;
 import com.revature.model.User;
 import com.revature.service.UserService;
 
+/* Creates controller for user to input username and password
+ * and validate user
+ */
 @SuppressWarnings("serial")
 public class LoginController extends HttpServlet {
 

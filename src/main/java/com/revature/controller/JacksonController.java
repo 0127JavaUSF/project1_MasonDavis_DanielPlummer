@@ -20,6 +20,7 @@ import com.revature.model.User;
 import com.revature.service.ReimbService;
 import com.revature.service.UserService;
 
+//Creates user array for input into user table
 public class JacksonController {
 
 	private static Logger log = Logger.getRootLogger();

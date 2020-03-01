@@ -7,6 +7,7 @@ package com.revature.model;
 
 import java.sql.Date;
 
+/*Creates all attributes for reimbursements*/
 public class Reimb {
 
 	private int reimbId;

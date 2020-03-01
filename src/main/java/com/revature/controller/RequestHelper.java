@@ -12,7 +12,9 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
-
+/* Updates the login, manager, and employee html
+ * pages from specific input.
+ */
 public class RequestHelper {
 	
 	private static Logger log = Logger.getRootLogger();

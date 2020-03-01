@@ -21,6 +21,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.model.Reimb;
 import com.revature.service.ReimbService;
 
+/* Creates controller for reimbursement page*/
+
 public class ReimbController {
 
 	

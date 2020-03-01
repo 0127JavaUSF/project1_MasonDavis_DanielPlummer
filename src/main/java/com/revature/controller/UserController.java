@@ -13,6 +13,10 @@ import com.revature.dao.UserDao;
 import com.revature.dao.UserImpl;
 import com.revature.model.User;
 
+
+/* Creates controller for user and converts json
+ * data to java object and vice versa
+ */
 public class UserController {
 	
 	private static Logger log = Logger.getRootLogger();

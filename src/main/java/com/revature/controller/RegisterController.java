@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.revature.service.UserService;
 
+/*Creates registration of new user*/
+
 public class RegisterController {
 	
 	public static String register(HttpServletRequest req) {

@@ -9,7 +9,9 @@ import java.util.List;
 
 import com.revature.model.Reimb;
 
-
+/* Creates access to reimbursement
+ * Data Access Object
+ */
 public interface ReimbDao {
 	
 	public List<Reimb> getReimbs();

@@ -5,6 +5,9 @@ package com.revature.dao;
  * UserImpl
  */
 
+/* Implements the user DAO and allows processing
+ * of input from user to stored and updated.
+ */
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -5,6 +5,7 @@ package com.revature.model;
  * User model class
  */
 
+/* Creates all attributes for user*/
 public class User {
 
 	private int userId, roleId;

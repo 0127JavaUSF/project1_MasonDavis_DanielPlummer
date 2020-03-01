@@ -9,7 +9,9 @@ import java.util.List;
 import com.revature.model.Reimb;
 import com.revature.model.User;
 
-
+/*Assists with input from user into
+ * reimbursement page.
+ */
 public class SessionHelper {
 	
 	private User u;

@@ -5,7 +5,9 @@ package com.revature.dao;
  * ReimbImplDao
  */
 
-
+/* Allows input into reimbursement page and
+ * implements the reimbursement DAO
+ */
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;

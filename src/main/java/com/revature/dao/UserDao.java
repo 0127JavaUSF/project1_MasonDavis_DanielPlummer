@@ -5,6 +5,10 @@ package com.revature.dao;
  * UserDao
  */
 
+
+/* Gives access to user Data Access Objects
+ * 
+ */
 import java.util.List;
 
 import com.revature.model.User;
