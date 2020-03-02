@@ -1,8 +1,18 @@
-<table>
-  <tr>
-    <th>Pending Reimbursements</th>
-  </tr>
-  <tr *ngFor = 'Reimbursements'>
+<div class="historyHead">Pending Reimbursements</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Reason</th>
+      <th scope="col">Submit Number</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
 
-  </tr>
+     <tr *ngFor = "let reimbursement of reimbursement"></tr>
+
+  </tbody>
 </table>

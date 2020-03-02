@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginServiceService } from '../service/login-service.service';
 import { Router, RouterLink, RouterEvent } from '@angular/router';
 import { Subscriber, Observable, observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login-page',
@@ -10,26 +11,23 @@ import { Subscriber, Observable, observable } from 'rxjs';
 })
 export class LoginPageComponent implements OnInit {
 
-  usernameInput = '';
-  passwordInput = '';
+  employee = {username: '', password: ''};
 
-  user = [];
+  constructor(private http: HttpClient) { }
 
-  constructor(private loginService: LoginServiceService) { }
-
-
-  ngOnInit(): void {
-
-  }
-  /*ngOnInit(): void {
-    this.loginService
-    .loginObservable$.subscribe(item => {
-
-        this.user.push(this.usernameInput, this.passwordInput);
-    });
-  }*/
+  ngOnInit(): void {}
 
   login() {
-    console.log('buuuuttttttonnnnn');
-}
+    return this.http.post<any>('http://localhost:8080/Project11/LoginController', {
+      username: this.employee.username,
+      password: this.employee.password
+    }).subscribe(
+      data => (console.log('Success')),
+      error => (console.log('Error'))
+    );
+  }
+
+  logout() {
+    return this.http.delete<any>('http://localhost:8080./Project11/LoginController');
+  }
 }

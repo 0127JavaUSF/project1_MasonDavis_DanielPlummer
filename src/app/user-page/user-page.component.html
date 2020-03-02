@@ -1,25 +1,23 @@
 
-<form class="newForm">
+<form class="newForm" #submitForm = "ngForm" (ngSubmit) = "onSubmit()">
   <div class="formHead">New Reimbursements</div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputCity">Amount of Reimbursements</label>
-      <input type="text" class="form-control" id="inputCity">
+      <input type="text" class="form-control" id="inputCity" name="amount" [(ngModel)] = "claim.amount">
     </div>
     <div class="form-group col-md-4">
       <label for="inputState">Reason</label>
       <select id="inputState" class="form-control">
-        <option selected>Reason</option>
-        <option>Food</option>
-        <option>Travel</option>
-        <option>Lodging</option>
-        <option>Other</option>
+        <option selected >Reason</option>
+        <option *ngFor = "let reason of reasons" name="reason" [(ngModel)] = "claim.reason">{{reason}}</option>
+
       </select>
     </div>
     <div class="form-group">
       <label for="exampleFormControlFile1">Example file input</label>
-      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      <input type="file" class="form-control-file" id="exampleFormControlFile1" name = "image" [(ngModel)] = "claim.image">
     </div>
-  <button (click) = submit() type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>

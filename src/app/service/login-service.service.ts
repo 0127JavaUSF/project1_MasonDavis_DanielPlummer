@@ -5,11 +5,13 @@ import { HttpClient } from '@angular/common/http';
 export interface User {
   username: string;
   password: string;
+  userId: number;
 }
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class LoginServiceService {
 
   constructor(private httpClient: HttpClient) { }
