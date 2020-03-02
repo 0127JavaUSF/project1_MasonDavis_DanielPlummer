@@ -198,4 +198,10 @@ public class UserImpl implements UserDao {
 		return false;
 	}
 
+	@Override
+	public List<User> getUserByResolver(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -19,7 +19,7 @@ public interface UserDao {
 	public List<User> getUsers();
 	public User getUserById(int id);
 	public User getUserByUsername(String username);
-	//public List<User> getUserByResolver(int id);
+	public List<User> getUserByResolver(int id);
 	
 	public boolean createUser(User u);
 	public boolean updateUser(User u);
