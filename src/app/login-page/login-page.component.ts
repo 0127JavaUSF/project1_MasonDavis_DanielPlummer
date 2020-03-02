@@ -27,7 +27,5 @@ export class LoginPageComponent implements OnInit {
     );
   }
 
-  logout() {
-    return this.http.delete<any>('http://localhost:8080./Project11/LoginController');
-  }
+
 }

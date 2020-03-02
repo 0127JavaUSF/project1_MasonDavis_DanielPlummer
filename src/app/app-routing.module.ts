@@ -4,6 +4,7 @@ import {UserPageComponent} from 'src/app/user-page/user-page.component';
 import {ManagerPageComponent} from 'src/app/manager-page/manager-page.component';
 import {HistoryComponent} from 'src/app/history/history.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { ContentComponent } from '../app/content/content.component';
 
 const routes: Routes = [{
 
@@ -20,6 +21,9 @@ const routes: Routes = [{
 }, {
   component: LoginPageComponent,
   path: 'login'
+}, {
+  component: ContentComponent,
+  path: 'logout'
 }];
 
 @NgModule({

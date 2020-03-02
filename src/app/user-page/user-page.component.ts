@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { SubmitClaimServiceService } from '../service/submit-claim-service.service';
 import { NewClaim } from '../classes/newClaim';
 @Component({
@@ -13,7 +12,7 @@ export class UserPageComponent {
 
   constructor(private submitClaim: SubmitClaimServiceService) { }
 
-  newClaim = new NewClaim(1, 'food', null);
+  newClaim = new NewClaim(0, 'Food', null);
 
   onSubmit() {
     this.submitClaim.create(this.newClaim)
