@@ -8,7 +8,7 @@ import { NewClaim } from '../classes/newClaim';
   styleUrls: ['./user-page.component.css']
 })
 export class UserPageComponent {
-
+  // setting the options for reimburesments
   reasons = ['Food', 'Lodging', 'Travel', 'Other'];
 
   constructor(private submitClaim: SubmitClaimServiceService) { }
